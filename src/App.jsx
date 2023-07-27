@@ -17,7 +17,7 @@ export default function App() {
 
   function addTodo(title) {
     setTodos((currenTodos) => {
-      return [...currenTodos, { id: crypto.randomUUID(), title, completed: false }];
+      return [...currenTodos, { id: Math.random, title, completed: false }];
     });
   }
 
